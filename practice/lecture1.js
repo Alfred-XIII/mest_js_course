@@ -2,12 +2,22 @@
  * change the following to make it valid string
  */
 
-var schoolname = 'Mest";
+var schoolname = 'Mes"';
 var answer = false;
 
 /*
- * Build a person object with object literal notation, property must contains string, number and boolan
+ * Build a person object with object literal notation, property must contains string,
+ * number and boolan
  */
+var Human = {
+    name: 'Josh',
+    age: 18,
+
+    read: function() {
+
+    }
+
+}
 
 /*
  * Build the same person object with Object constructor function
