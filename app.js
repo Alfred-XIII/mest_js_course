@@ -1,12 +1,13 @@
 /**
  * Created by Jerry on 2016-10-21.
  */
-console.log("Welcome to JS world!");
+//console.log("Welcome to JS world!");
 
-"use strict";
-name = 'jerry'
+/*"use strict";
 
-console.log(name)
+name = 'jerry';
+
+console.log(name);*/
 
 /*
 'use strict';
@@ -14,7 +15,7 @@ name = 'jerry'
 console.log(name)
 */
 
-var var1 = 7 ;
+/*var var1 = 7 ;
 
 console.log(typeof(var1));
 
@@ -33,6 +34,7 @@ greeting();
 function greeting() {
     console.log("hello world!");
 }
+*/
 
 var people = {
     morningGreeting: 'good Moring!',
@@ -43,15 +45,16 @@ var people = {
 
 people.greeting();
 
+
 var speak = people.greeting;
 speak();
 
-var speakBind = speak.bind(people);
-speakBind();
+/*var speakBind = speak.bind(people);
+speakBind();*/
 
 //============================================
 
-var obj = {
+/*var obj = {
   num: 2
 };
 
@@ -59,4 +62,19 @@ var addToThis = function(a, b, c) {
     return this.num + a + b + c;
 };
 
-addToThis.call(obj, 1, 2, 3);
+addToThis.call(obj, 1, 2, 3);*/
+
+
+var regEx = /ou/i;
+var str1 = 'count down';
+var str2 = 'I cannot go until 5pm';
+
+var result = str1.match(regEx);
+
+setTimeout(function() {
+    console.log('2 second passed');
+}, 2000);
+
+setInterval(function() {
+    console.log('ping');
+}, 500);
